@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+    - name: data_slido
+      database: postgres
+      schema: public
+      tables:
+        - name: data_slido 
+          columns:
+            - name: domains
+              description: domain names
+              tests:
+                 - unique
+                 - not_null
