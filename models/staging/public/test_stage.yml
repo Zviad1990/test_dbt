@@ -1,0 +1,11 @@
+version: 2
+
+models:
+    - name: stage_monetary
+      description: one of tables from slido test
+      columns:
+        - name: domains
+          description: "{{ doc('domains') }}"
+          tests:
+            - unique
+            - not_null
